@@ -1,0 +1,217 @@
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --white-color: #ffffff;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --secondary-bg-color: #f5f4fa;
+  --accent-bg-color: #2f303a;
+  --hero-btn-hover-bgcolor: #188ce8;
+}
+
+body {
+  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--secondary-text-color);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.bg-accent {
+  background-color: var(--accent-bg-color);
+}
+
+.bg-second {
+  background-color: var(--secondary-bg-color);
+}
+
+/* ========================================= LOGO ========================================= */
+.logo {
+  color: var(--secondary-text-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.logo-accent {
+  color: var(--accent-text-color);
+}
+/* ========================================= END LOGO ======================================== */
+
+/* ====================================== NAVIGATION ====================================== */
+
+.nav .nav-link {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav .nav-link:hover,
+.nav .nav-link:focus {
+  color: var(--accent-text-color);
+}
+
+.nav .nav-link.current {
+  color: var(--accent-text-color);
+}
+/* ====================================== END NAVIGATION ==================================== */
+
+/* ====================================== MAIL & PHONE ====================================== */
+.address .address-link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.address .address-link:hover,
+.address .address-link:focus {
+  color: var(--accent-text-color);
+}
+
+/* =================================== END MAIL & PHONE ====================================== */
+
+/*  ====================================== HERO ========================================== */
+
+.hero-title {
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  background-color: var(--accent-text-color);
+  color: var(--white-color);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.hero-button:hover {
+  background-color: var(--hero-btn-hover-bgcolor);
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/*  ====================================== END HERO ====================================== */
+
+/* ====================================== FEATURES ====================================== */
+
+.features-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* ====================================== END FEATURES ====================================== */
+
+/* ====================================== TEAM ====================================== */
+
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+/* ====================================== END TEAM ====================================== */
+
+/* ====================================== FOOTER ====================================== */
+
+.logo-white {
+  color: var(--white-color);
+}
+
+.footer-address .footer-link {
+  color: var(--footer-text-color);
+  font-style: normal;
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.footer-address .footer-link:hover,
+.footer-address .footer-link:focus {
+  color: var(--white-color);
+}
+
+/* ====================================== END FOOTER ====================================== */
+
+/* ################################# PORTFOLIO ##########################################  */
+
+/* ====================================== FILTER ====================================== */
+
+.filter .filter-button {
+  color: var(--secondary-text-color);
+  background-color: var(--secondary-bg-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.filter .filter-button:hover,
+.filter .filter-button:focus {
+  color: var(--white-color);
+  background-color: var(--accent-text-color);
+}
+
+/* ====================================== END FILTER ====================================== */
+
+/* ====================================== PROJECTS ====================================== */
+
+.project .project-name {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project .project-type {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primary-text-color);
+}
+
+/* ====================================== END PROJECTS ====================================== */
