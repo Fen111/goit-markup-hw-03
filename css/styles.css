@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
@@ -19,6 +29,11 @@ h1,
 h2,
 h3 {
   color: var(--secondary-text-color);
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
 
 .link {
@@ -27,17 +42,25 @@ h3 {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .bg-accent {
   background-color: var(--accent-bg-color);
 }
 
-.bg-second {
-  background-color: var(--secondary-bg-color);
+/* ========================================= HEADER ======================================  */
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
 }
 
-/* ========================================= LOGO ========================================= */
+/* ======================== LOGO =========================== */
 .logo {
   color: var(--secondary-text-color);
   font-family: 'Raleway', sans-serif;
@@ -48,9 +71,9 @@ h3 {
 .logo-accent {
   color: var(--accent-text-color);
 }
-/* ========================================= END LOGO ======================================== */
+/* ======================= END LOGO ========================= */
 
-/* ====================================== NAVIGATION ====================================== */
+/* ======================= NAVIGATION ======================= */
 
 .nav .nav-link {
   color: var(--secondary-text-color);
@@ -68,9 +91,9 @@ h3 {
 .nav .nav-link.current {
   color: var(--accent-text-color);
 }
-/* ====================================== END NAVIGATION ==================================== */
+/* ================= END NAVIGATION ====================== */
 
-/* ====================================== MAIL & PHONE ====================================== */
+/* ================= MAIL & PHONE ======================== */
 .address .address-link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -84,16 +107,50 @@ h3 {
   color: var(--accent-text-color);
 }
 
-/* =================================== END MAIL & PHONE ====================================== */
+/* ================== END MAIL & PHONE =================== */
+
+/* ====================================== END HEADER ====================================  */
+
+/* ========== SECTION ============= */
+
+.section {
+  margin-bottom: 94px;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.section.bg-second {
+  background-color: var(--secondary-bg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-bottom: 0px;
+}
+
+.section.margin-top {
+  margin-top: 94px;
+}
+
+/* ========== END SECTION ============= */
 
 /*  ====================================== HERO ========================================== */
 
+.hero {
+  text-align: center;
+  margin-bottom: 94px;
+}
+
 .hero-title {
   color: var(--white-color);
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -101,24 +158,19 @@ h3 {
 .hero-button {
   background-color: var(--accent-text-color);
   color: var(--white-color);
+  padding: 10px 32px;
+  min-width: 200px;
   cursor: pointer;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 
 .hero-button:hover {
   background-color: var(--hero-btn-hover-bgcolor);
-}
-
-.section-title {
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
 }
 
 /*  ====================================== END HERO ====================================== */
@@ -129,6 +181,7 @@ h3 {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .features-text {
@@ -141,6 +194,7 @@ h3 {
 /* ====================================== TEAM ====================================== */
 
 .team-title {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -153,12 +207,25 @@ h3 {
   text-align: center;
 }
 
+.team-img {
+  margin-bottom: 30px;
+}
+
 /* ====================================== END TEAM ====================================== */
 
 /* ====================================== FOOTER ====================================== */
 
 .logo-white {
   color: var(--white-color);
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-address {
+  margin-top: 20px;
 }
 
 .footer-address .footer-link {
@@ -179,6 +246,10 @@ h3 {
 /* ################################# PORTFOLIO ##########################################  */
 
 /* ====================================== FILTER ====================================== */
+
+.filter {
+  margin-bottom: 34px;
+}
 
 .filter .filter-button {
   color: var(--secondary-text-color);
