@@ -58,14 +58,14 @@
     <!-- =============================== MAIN =========================================== -->
     <main>
       <!--============================= HERO =================================-->
-      <section class="hero layout bg-accent">
+      <section class="hero bg-accent">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button class="hero-button" type="button">Заказать услугу</button>
       </section>
       <!--============================ FEATURES ================================-->
       <section class="section">
         <div class="container">
-          <h2 hidden>Особенности</h2>
+          <h2 class="visually-hidden">Особенности</h2>
           <ul class="features list">
             <li class="item">
               <h3 class="features-title">Внимание к деталям</h3>
@@ -132,10 +132,10 @@
           </ul>
         </div>
       </section>
-      <!--============================== END WORK ======================================-->
+      <!--============================== END WORK ==================================-->
 
-      <!--================================== TEAM ========================================-->
-      <section class="section layout">
+      <!--================================== TEAM ==================================-->
+      <section class="section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team list">
@@ -147,8 +147,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-title">Игорь Демьяненко</h3>
-              <p class="team-position" lang="en">Product Designer</p>
+              <div class="team-border">
+                <h3 class="team-title">Игорь Демьяненко</h3>
+                <p class="team-position" lang="en">Product Designer</p>
+              </div>
             </li>
             <li class="item">
               <img
@@ -158,8 +160,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-title">Ольга Репина</h3>
-              <p class="team-position" lang="en">Frontend Developer</p>
+              <div class="team-border">
+                <h3 class="team-title">Ольга Репина</h3>
+                <p class="team-position" lang="en">Frontend Developer</p>
+              </div>
             </li>
             <li class="item">
               <img
@@ -169,8 +173,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-title">Николай Тарасов</h3>
-              <p class="team-position" lang="en">Marketing</p>
+              <div class="team-border">
+                <h3 class="team-title">Николай Тарасов</h3>
+                <p class="team-position" lang="en">Marketing</p>
+              </div>
             </li>
             <li class="item">
               <img
@@ -180,8 +186,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-title">Михаил Ермаков</h3>
-              <p class="team-position" lang="en">UI Designer</p>
+              <div class="team-border">
+                <h3 class="team-title">Михаил Ермаков</h3>
+                <p class="team-position" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -192,7 +200,7 @@
     <!--=============================== END MAIN ====================================-->
 
     <!--================================== FOOTER ===================================-->
-    <footer class="footer layout bg-accent">
+    <footer class="footer bg-accent">
       <div class="container">
         <a class="logo link" href="./index.html" lang="en">
           <span class="logo-accent link">Web</span
@@ -223,6 +231,6 @@
         </address>
       </div>
     </footer>
-    <!--================================== END FOOTER ===================================-->
+    <!--================================== END FOOTER ================================-->
   </body>
 </html>
