@@ -20,40 +20,31 @@ body {
 h1,
 h2,
 h3 {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   color: var(--secondary-text-color);
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 img {
   display: block;
 }
 
-.link {
+a {
   text-decoration: none;
 }
 
-.list {
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .bg-accent {
   background-color: var(--accent-bg-color);
 }
-
-/* .layout {
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-} */
 
 .visually-hidden {
   position: absolute;
@@ -66,6 +57,17 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.positive-margin {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.negative-margin {
+  display: flex;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 /* ========================================= HEADER ======================================  */
 
@@ -118,13 +120,11 @@ img {
 }
 
 .nav .nav-link:hover,
-.nav .nav-link:focus {
+.nav .nav-link:focus,
+.nav .nav-link.nav-link.current {
   color: var(--accent-text-color);
 }
 
-.nav .nav-link.current {
-  color: var(--accent-text-color);
-}
 /* ================= END NAVIGATION ====================== */
 
 /* ================= MAIL & PHONE ======================== */
@@ -187,12 +187,13 @@ img {
 
 .hero {
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
-  padding-top: 200px;
   padding-left: 452px;
   padding-right: 452px;
   color: var(--white-color);
@@ -205,7 +206,6 @@ img {
 
 .hero-button {
   padding: 10px 32px;
-  margin-bottom: 200px;
   background-color: var(--accent-text-color);
   color: var(--white-color);
   min-width: 200px;
@@ -216,6 +216,9 @@ img {
   line-height: 1.87;
   align-items: center;
   letter-spacing: 0.06em;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .hero-button:hover {
@@ -228,7 +231,6 @@ img {
 
 .features {
   display: flex;
-
   margin-top: -30px;
   margin-left: -30px;
 }
@@ -407,8 +409,7 @@ img {
 }
 
 .project-border {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 24px;
   border: 1px solid var(--project-border);
   border-top: 0;
 }
